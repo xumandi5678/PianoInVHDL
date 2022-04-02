@@ -90,16 +90,15 @@ Figure 2. This is the User Interface portion that I edited.
 
 Code Function: 
 
-	After synthesis and implementation and programming of the device, when the first switch is flipped, x”00000001”, 
-	under hexadecimal notation, then the clock count increases. Each note takes one second to play, so I converted a table
-	of values going from 0*10^8 clock counts through 11*10^8 clock counts for each note in the melody (all in hexadecimal). 
+After synthesis and implementation and programming of the device, when the first switch is flipped, x”00000001”, 
+under hexadecimal notation, then the clock count increases. Each note takes one second to play, so I converted a table
+of values going from 0*10^8 clock counts through 11*10^8 clock counts for each note in the melody (all in hexadecimal). 
 
-	Notes are generated or modified after each count changes into the specific count times. They are formatted using 5 bits
-	from the note-gen file that maps the specific notes.
+Notes are generated or modified after each count changes into the specific count times. They are formatted using 5 bits
+from the note-gen file that maps the specific notes.
 	
-	Timing of the notes is determined by the count ranges defined by the if and elsif statements. 1 second is one increase
-	by adding 10^8. 
+Timing of the notes is determined by the count ranges defined by the if and elsif statements. 1 second is one increase
+by adding 10^8. 
 	
-	Notes are displayed through the note_in and note_next connection from the seven_seg.vhd file. As you read seg_buf’s
-	bits from left to right, it translates into the notes. 
-
+Notes are displayed through the note_in and note_next connection from the seven_seg.vhd file. As you read seg_buf’s
+bits from left to right, it translates into the notes. 
