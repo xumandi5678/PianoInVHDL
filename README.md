@@ -96,8 +96,10 @@ Code Function:
 
 	Notes are generated or modified after each count changes into the specific count times. They are formatted using 5 bits
 	from the note-gen file that maps the specific notes.
+	
 	Timing of the notes is determined by the count ranges defined by the if and elsif statements. 1 second is one increase
 	by adding 10^8. 
+	
 	Notes are displayed through the note_in and note_next connection from the seven_seg.vhd file. As you read seg_buf’s
 	bits from left to right, it translates into the notes. 
 
